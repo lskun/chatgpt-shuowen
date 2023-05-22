@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "http://localhost:3002/$1"
+      "destination": "/api/proxy"
     },
     { "source": "/:path*", "destination": "/index.html" }
   ]
