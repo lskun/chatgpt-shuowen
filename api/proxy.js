@@ -8,6 +8,6 @@ export default (req, res) => {
   createProxyMiddleware({
     target,
     changeOrigin: true,
-    pathRewrite: path => path.replace('/api', '/'),
+    pathRewrite: path => path.replace('/api', ''),
   })(req, res)
 }
